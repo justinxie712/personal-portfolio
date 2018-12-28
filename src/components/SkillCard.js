@@ -1,11 +1,13 @@
 import React from 'react';
 
 const SkillCard = (props) => (
-    <div className="SkillCard">
-        <h3>{props.skill}</h3>
-        <p>Level: {props.proficiency}</p>
-        <p>Years of Experience: {props.experience}</p>
-        <h5>Projects</h5>
+    <div className="skill-card">
+        <div>
+            <p className="card-title">{props.skill}</p>
+            <hr></hr>
+            <p className="details">Years of Experience: {props.experience}</p>
+            <p className="details">Level: {props.proficiency}</p>
+        </div>
     </div>
 );
 

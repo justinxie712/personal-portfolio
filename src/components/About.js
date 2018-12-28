@@ -2,23 +2,22 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
-            <h3 className='Title'>About</h3>
+        <div className="main">
             <div className='Container'>
+            <p className="section">About</p>
                 <hr></hr>
-                <p style={{background: "white", padding: "2vh", border: "3px solid black", borderRadius: "1vh"}}>
-                    My name is Justin Xie, and I develop web applications. 
-                    Through previous internships and personal projects, I have gained experience with a variety of different languages and frameworks,
-                    including React, Javascript, and Bootstrap. 
-                    I can thrive both working with a team setting, or independently, as I am a quick learner, and a cooperative team player.  
+                <p className="intro">
+                    My name is Justin Xie, and I develop web applications. I live in Mountain View, California, but consider many places home 
+                    (Montreal, Vancouver, Toronto, to name a few). Through previous internships and personal projects, I have gained experience 
+                    with a variety of languages and frameworks, particularly with React, JavaScript, HTML, CSS and Bootstrap. 
+                    I work well in independent settings, as well as team-based settings. I am a quick learner, a diligent worker, an excellent problem-solver,
+                    and a cooperative team player.  
                 </p>
-                <br></br>
-                <p style={{background: "white", padding: "2vh", border: "3px solid black", borderRadius: "1vh"}}>
-                    Some of my extracurricular activities include athletics and community service. 
-                    I enjoy working out at the gym, playing soccer, basketball, and baseball, as well
-                    as getting involved with my service fraternity, Alpha Phi Omega. 
-                    These passions have instilled the values of team work and leadership in me, both in my personal,
-                    academic, and professional life.  
+                <p className="intro"> 
+                    In my spare time, I enjoy going to the gym, playing soccer, basketball, and baseball, and
+                    getting involved with my service fraternity, Alpha Phi Omega, as an alumnus. 
+                    These personal interests of mine have instilled the values of team work and leadership 
+                    throughout my personal, academic, and professional life.
                 </p>
             </div>   
         </div>

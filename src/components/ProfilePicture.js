@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfilePicture = (props) => (
     <div>
-        <img className="ProfilePicture" alt="profilePicture" src={props.pictureSRC}/>
+        <img className="profile-picture" alt="profilePicture" src='./justin.jpg'/>
     </div>
 );
 

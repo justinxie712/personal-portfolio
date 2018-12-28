@@ -1,33 +1,178 @@
-.App {
-  text-align: center;
+html {
+	background-image: url("montreal-background.jpg");
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 500px; /* You must set a specified height */
+	background-repeat: repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+::-webkit-scrollbar { 
+    display: none; 
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+main {
+	background-color: black;
+	z-index: 300;
 }
 
 .topnav {
-  background-color: red;
+	position: fixed;
+	z-index: 100;
+	top: 0%;
+	background-color: #dbf1ff;
+	border: 2px solid black;
+	height: 15%;
+	width: 100%;
+}
 
+.option {
+	position: relative;
+}
+
+.name {
+	font-size: 5vh;
+	position: absolute;
+	margin: 3vh 3vh 3vh 5vh; 
+}
+
+.Container {
+	position: absolute;
+	background-color: white; 
+	width: 50%;
+	max-width: 50%;
+	height: 85%;
+	left: 40%;
+	top: 15%;
+	padding: 5vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 1vh solid black;
+	border-radius: 5%;
+}
+
+.profile-picture {
+	position: fixed;
+	width: 40vh;
+	height: 40vh;
+	top: 25%;
+	left: 5%;
+	border: 1vh solid black;
+	border-radius: 50%;
+	margin: 5vh;
+}
+
+.Title {
+	position: relative;
+	top: 15vh;
+	margin-top: 2vh;
+	left: 35%;
+}
+
+.logo {
+	position: absolute;
+	height: 12.5vh;
+	width: 12.5vh;
+	margin: 2vh;
+}
+
+.logo-modal {
+	position: relative;
+	float: left;
+	top: -0vh;
+	height: 10vh;
+	width: 10vh;
+	margin: 3vh;
+	bottom: 7.5vh;
+}
+
+.project {
+	border: 2px solid black;
+	background-color: #dbf1ff;
+	border-radius: 5px;
+	padding: 3vh;
+	margin: 3vh;
+	height: 35vh;
+}
+
+.project-details {
+	position: relative;
+	left: 25vh;
+	max-width: 65%;
+	text-align: left;
+	font-size: 2vh;
+}
+
+.heading {
+	font-size: 3vh;
+}
+
+.description {
+	position: relative;
+	margin-top: 20px;
+}
+
+.experience {
+	position: relative;
+	font-size: 3.5vh;
+}
+
+.skillList {
+	background-color: white;
+	padding: 1vh;
+	margin: 1vh;
+	position: relative;
+	left: 5vh;
+	height: 25vh;
+}
+
+.skill {
+	font-size: 3vh;
+	margin: 0 0 1vh 0;
+	text-decoration-line: underline;
+}
+
+.skill-card {
+	position: absolute;
+	background-color: white;
+	z-index: 300;
+	width: 40vh;
+	height: 100%;
+	top: 0%;
+	left: 30%;
+	padding: 2vh;
+	border-radius: 1vh;
+	border: 1px solid red;
+}
+
+.details {
+	font-size: 2vh;
+	text-align: center;
+	margin: 2vh;
+}
+
+.card-title {
+	font-size: 3vh;
+	text-align: center;
+}
+
+.intro {
+	background: #dbf1ff; 
+	padding: 2vh;
+	border: 1px solid black; 
+	border-radius: 1vh;
+	font-size: 2.35vh;
+}
+
+.section {
+	font-size: 4.5vh;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-button {
+	position: absolute;
+	margin-left: 25vh;
+}
+
+.content {
+	padding: 3vh;
 }

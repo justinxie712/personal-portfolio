@@ -11,18 +11,18 @@ import Projects from '../components/Projects';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div className="main">
+        <div>
             <Header name="Justin Xie"/>
-            <ProfilePicture 
-                pictureSRC="Justin.png"
-            />
-            <Switch>
-                <Route path="/" exact={true} component={About} />
-                <Route path="/projects" exact={true} component={Projects} />
-                <Route path="/contact" exact={true} component={Contact} />
-                <Route path="/skills" exact={true} component={Skills} />
-            </Switch>    
-        </div> 
+            <div className="main">
+                <ProfilePicture />
+                <Switch>
+                    <Route path="/" exact={true} component={About} />
+                    <Route path="/projects" exact={true} component={Projects} />
+                    <Route path="/contact" exact={true} component={Contact} />
+                    <Route path="/skills" exact={true} component={Skills} />
+                </Switch>    
+            </div>  
+        </div>
     </BrowserRouter>
 );
 
