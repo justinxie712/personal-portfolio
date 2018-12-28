@@ -176,3 +176,24 @@ main {
 .content {
 	padding: 3vh;
 }
+
+.fa-github-square {
+	position: absolute;
+	left: 5vh;
+}
+
+.fa-instagram {
+	position: absolute;
+	left: 15vh;
+}
+
+.fa-facebook {
+	position: absolute;
+	left: 25vh;
+}
+
+.fa-linkedin {
+	position: absolute;
+	left: 35vh;
+}
+

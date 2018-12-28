@@ -1,7 +1,26 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
+import SocialMediaIcons from 'react-social-media-icons';
 
 const Contact = () => {
+    const socialMediaIcons = [
+        {
+          url: 'https://github.com/justinxie712',
+          className: 'fa-github-square',
+        },
+        {
+          url: 'https://www.facebook.com/justin.xie712',
+          className: 'fa-facebook',
+        },
+        {
+          url: 'https://www.linkedin.com/in/justin-xie712/',
+          className: 'fa-linkedin',
+        },
+        {
+            url: 'https://www.instagram.com/habs712/',
+            className: 'fa-instagram',
+        },
+        
+    ];
     return (
         <div>
             <div className='Container'>
@@ -19,10 +38,18 @@ const Contact = () => {
                 <br></br>
                 <h4>Social Media</h4>
                 <hr></hr>
-                <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://www.linkedin.com/in/justin-xie712/" />
+                <SocialMediaIcons
+                    className="icons"
+                    icons={socialMediaIcons}
+                    iconSize={'3em'}
+                    iconColor={'blue'}
+                    style={{marginRight: "13vh"}}
+                    
+                />
+                {/* <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://www.linkedin.com/in/justin-xie712/" />
                 <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://www.facebook.com/justin.xie712" />
                 <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://github.com/justinxie712" />
-                <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://www.instagram.com/habs712/" />
+                <SocialIcon style={{ height: "8vh", width: "8vh", marginRight: "3vh"}} url="https://www.instagram.com/habs712/" /> */}
             </div>   
         </div>
     )
